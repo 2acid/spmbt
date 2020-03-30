@@ -16,7 +16,7 @@ jobs:
             ssh-keyscan github.com >> ~/.ssh/known_hosts
             git -C spmbt fetch --prune || git clone --mirror "${CIRCLE_REPOSITORY_URL}" spmbt.git
 
-            cd myproject.git
+            cd spmbt.git
             git fetch --force --prune origin
             
             ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
