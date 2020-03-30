@@ -13,6 +13,7 @@ jobs:
           command: |
             printenv
 
+	    mkdir ~/.ssh            
             ssh-keyscan github.com >> ~/.ssh/known_hosts
             git -C spmbt fetch --prune || git clone --mirror "${CIRCLE_REPOSITORY_URL}" spmbt.git
 
