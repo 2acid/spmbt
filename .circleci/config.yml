@@ -14,7 +14,7 @@ jobs:
             printenv
 
             ssh-keyscan github.com >> ~/.ssh/known_hosts
-            git -C laportclient fetch --prune || git clone --mirror "${CIRCLE_REPOSITORY_URL}" laportclient.git
+            git -C spmbt fetch --prune || git clone --mirror "${CIRCLE_REPOSITORY_URL}" spmbt.git
 
             cd myproject.git
             git fetch --force --prune origin
