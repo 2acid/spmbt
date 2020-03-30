@@ -20,9 +20,9 @@ jobs:
             git fetch --force --prune origin
             
             ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
-            git push --force "git@gitlab.com:2acid/laportclient.git" ${CIRCLE_BRANCH}
-            git push --tags --force "git@gitlab.com:2acid/laportclient.git"
-            git remote prune "git@gitlab.com:2acid/laportclient.git"
+            git push --force "git@gitlab.com:2acid/spmbt.git" ${CIRCLE_BRANCH}
+            git push --tags --force "git@gitlab.com:2acid/spmbt.git"
+            git remote prune "git@gitlab.com:2acid/spmbt.git"
 
 # Also push changes when tags are added
 workflows:
